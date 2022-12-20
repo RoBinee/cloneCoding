@@ -1,0 +1,10 @@
+for logo
+
+    <i class="fa-solid fa-circle-notch"></i>
+    <i class="fa-solid fa-grip-lines"></i>
+
+for menu
+<i class="fa-solid fa-bars"></i>
+
+for goggle
+<i class="fa-brands fa-google-play"></i>

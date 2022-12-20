@@ -1,0 +1,222 @@
+/*
+===========
+Goggle Font
+===========
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --white-clr: #ffffff;
+  --blck-clr: #000000;
+  --light-blck-clr: #2a272a;
+  --main-clr: #75bf7a;
+  --gray-clr: #9e9da2;
+  --bckground-clr: #fcfcfc;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: transparent;
+  background: transparent;
+}
+ul {
+  list-style: none;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+  color: var(--light-blck-clr);
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
+
+  color: var(--gray-clr);
+}
+@media only screen and (min-width: 650px) {
+  h2 {
+    font-size: 3.5em;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}
+/* mobile-responsive... && all */
+
+/* 1. For header */
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: var(--bckground-clr);
+}
+/* 2. For navbar */
+.navbar {
+  background: var(--white-clr);
+  height: 6rem;
+}
+.nav-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+.fa-stack {
+  width: 1.3em;
+}
+.logo {
+  color: var(--main-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-name {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--light-blck-clr);
+}
+.menu:hover {
+  transform: rotate(90deg);
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.links-container {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* add links-container show-container class */
+.show-container {
+  height: auto;
+}
+.link {
+  display: block;
+  padding: 1rem;
+  transition: all 0.25s ease-out;
+}
+
+.link:hover {
+  background: var(--main-clr);
+  color: var(--white-clr);
+}
+
+/* !!end of navbar! */
+
+/* 3. hero section */
+.hero {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.info {
+  text-align: center;
+}
+.img-container {
+  max-width: 25rem;
+}
+.img-container img {
+  width: 100%;
+}
+
+.main-desc,
+.desc,
+.btn {
+  margin-top: 2.5rem;
+}
+
+.btn {
+  background: var(--blck-clr);
+  color: var(--white-clr);
+  text-transform: uppercase;
+  padding: 0.5rem 0.8rem;
+  font-weight: 700;
+  border-radius: 3px;
+  width: 10rem;
+  height: 2.5rem;
+  letter-spacing: 1.7px;
+}
+@media only screen and (min-width: 650px) {
+  /* for desktop */
+  .navbar {
+    background: var(--white-clr);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  .menu {
+    display: none;
+  }
+  .nav-header {
+    width: auto;
+  }
+  .links-container {
+    display: block;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .link {
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+  .link:hover {
+    background: var(--main-clr);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+
+  /* !!end of navbar! */
+  .hero {
+    padding-top: 4rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .info {
+    max-width: 40%;
+    text-align: left;
+  }
+  .img-container {
+    max-width: 40%;
+  }
+  img {
+    height: 33rem;
+  }
+}
